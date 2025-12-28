@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Buddy - Your Ultimate Travel Companion</title>
+    <meta name="description" content="Book hotels, transport, and explore destinations with AI Travel Buddy.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-earth-americas"></i> AI TRAVEL BUDDY
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#hotels">Hotels</a></li>
+                <li><a href="#transport">Transport</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="auth-btn" class="btn btn-primary">Login / Signup</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Explore the World with <br> <span class="gradient-text">AI Precision</span></h1>
+            <p>Your one-stop destination for booking hotels, flights, trains, and discovering hidden gems across the
+                globe.</p>
+            <div class="hero-buttons">
+                <a href="#destinations" class="btn btn-primary">Start Exploring</a>
+                <a href="#hotels" class="btn btn-outline">Book a Stay</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Destinations -->
+    <section id="featured" class="section">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            <div class="destinations-grid">
+                <!-- Paris -->
+                <div class="card destination-card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Paris" class="card-img">
+                    <div class="card-content">
+                        <h3>Paris, France</h3>
+                        <p>The city of lights and love.</p>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span>$1,200 avg</span>
+                        </div>
+                        <button class="btn btn-primary full-width">View Details</button>
+                    </div>
+                </div>
+                <!-- Tokyo -->
+                <div class="card destination-card">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Tokyo" class="card-img">
+                    <div class="card-content">
+                        <h3>Tokyo, Japan</h3>
+                        <p>A mix of tradition and ultramodern.</p>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span>$1,500 avg</span>
+                        </div>
+                        <button class="btn btn-primary full-width">View Details</button>
+                    </div>
+                </div>
+                <!-- New York -->
+                <div class="card destination-card">
+                    <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="New York" class="card-img">
+                    <div class="card-content">
+                        <h3>New York, USA</h3>
+                        <p>The city that never sleeps.</p>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-star"></i> 4.7</span>
+                            <span>$1,800 avg</span>
+                        </div>
+                        <button class="btn btn-primary full-width">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Hotels Section -->
+    <section id="hotels" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Luxury Stays</h2>
+
+            <!-- Filters -->
+            <div class="filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">5 Star</button>
+                <button class="filter-btn">Resorts</button>
+                <button class="filter-btn">Villas</button>
+            </div>
+
+            <div class="destinations-grid">
+                <!-- Hotel 1 -->
+                <div class="card hotel-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Luxury Hotel" class="card-img">
+                        <span class="badge">Top Rated</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Grand Plaza Resort</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Maldives</p>
+                        <ul class="amenities">
+                            <li><i class="fa-solid fa-wifi"></i> Wifi</li>
+                            <li><i class="fa-solid fa-person-swimming"></i> Pool</li>
+                            <li><i class="fa-solid fa-utensils"></i> Dinner</li>
+                        </ul>
+                        <div class="price-row">
+                            <span class="price">$450 <small>/night</small></span>
+                            <button class="btn btn-primary book-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 2 -->
+                <div class="card hotel-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Resort" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ocean View Villa</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Bali, Indonesia</p>
+                        <ul class="amenities">
+                            <li><i class="fa-solid fa-spa"></i> Spa</li>
+                            <li><i class="fa-solid fa-umbrella-beach"></i> Beach</li>
+                        </ul>
+                        <div class="price-row">
+                            <span class="price">$320 <small>/night</small></span>
+                            <button class="btn btn-primary book-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 3 -->
+                <div class="card hotel-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="City Hotel" class="card-img">
+                        <span class="badge">Best Value</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Skyline City Hotel</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> New York, USA</p>
+                        <ul class="amenities">
+                            <li><i class="fa-solid fa-dumbbell"></i> Gym</li>
+                            <li><i class="fa-solid fa-martini-glass"></i> Bar</li>
+                        </ul>
+                        <div class="price-row">
+                            <span class="price">$280 <small>/night</small></span>
+                            <button class="btn btn-primary book-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transport Section -->
+    <section id="transport" class="section">
+        <div class="container">
+            <h2 class="section-title">Seamless Travel</h2>
+
+            <div class="transport-container glass">
+                <!-- Tabs -->
+                <div class="transport-tabs">
+                    <button class="tab-btn active" data-tab="bus"><i class="fa-solid fa-bus"></i> Bus</button>
+                    <button class="tab-btn" data-tab="train"><i class="fa-solid fa-train"></i> Train</button>
+                    <button class="tab-btn" data-tab="local"><i class="fa-solid fa-taxi"></i> Local</button>
+                </div>
+
+                <!-- Bus Content -->
+                <div class="tab-content active" id="bus">
+                    <div class="search-box">
+                        <div class="input-group">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" placeholder="From (City)">
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <input type="text" placeholder="To (City)">
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-calendar"></i>
+                            <input type="date">
+                        </div>
+                        <button class="btn btn-primary full-width">Search Buses</button>
+                    </div>
+                </div>
+
+                <!-- Train Content -->
+                <div class="tab-content" id="train">
+                    <div class="search-box">
+                        <div class="input-group">
+                            <i class="fa-solid fa-train-subway"></i>
+                            <input type="text" placeholder="From Station">
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-train-subway"></i>
+                            <input type="text" placeholder="To Station">
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-calendar"></i>
+                            <input type="date">
+                        </div>
+                        <button class="btn btn-primary full-width">Search Trains</button>
+                    </div>
+                </div>
+
+                <!-- Local Content -->
+                <div class="tab-content" id="local">
+                    <div class="search-box">
+                        <div class="input-group">
+                            <i class="fa-solid fa-map-pin"></i>
+                            <input type="text" placeholder="Pickup Location">
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <input type="text" placeholder="Dropoff Location">
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-clock"></i>
+                            <input type="time">
+                        </div>
+                        <button class="btn btn-primary full-width">Find Ride</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-btn">&times;</span>
+            <div class="auth-box">
+                <!-- Login Form -->
+                <form id="login-form">
+                    <h2>Welcome Back</h2>
+                    <p>Login to continue your journey</p>
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Login</button>
+                    <p class="switch-auth">Don't have an account? <span id="switch-to-signup">Signup</span></p>
+                </form>
+
+                <!-- Signup Form -->
+                <form id="signup-form" class="hidden">
+                    <h2>Create Account</h2>
+                    <p>Join us and explore the world</p>
+                    <div class="input-group">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Sign Up</button>
+                    <p class="switch-auth">Already have an account? <span id="switch-to-login">Login</span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-btn" id="close-payment">&times;</span>
+            <div class="auth-box">
+                <h2>Confirm Booking</h2>
+                <p>Complete your secure payment</p>
+                <div class="booking-summary" id="booking-details">
+                    <!-- Dynamic details -->
+                </div>
+                <form id="payment-form">
+                    <div class="input-group">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <input type="text" placeholder="Card Number" required maxlength="19">
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <i class="fa-solid fa-calendar"></i>
+                            <input type="text" placeholder="MM/YY" required maxlength="5">
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="text" placeholder="CVV" required maxlength="3">
+                        </div>
+                    </div>
+                    <div class="total-amount">
+                        Total: <span id="total-price">$0</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Pay Now <i class="fa-solid fa-lock"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="app"></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
